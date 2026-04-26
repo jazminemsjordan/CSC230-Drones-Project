@@ -1,8 +1,5 @@
 # Drones Project — v2 Changes
 
-This update extends the v1 notebook with the features the proposal called
-out as core stakeholder needs.
-
 ## What's new
 
 ### 1. EXIF / geotag fallback for JPGs
@@ -69,7 +66,6 @@ Section 7 of the notebook builds a synthetic folder tree under
 | `10/10.17Park` | Personal flight + .SRT video log |
 | `10/10.18Trail` | Personal flight, **EXIF-only** (the new fallback) |
 
-You can develop and demo without remounting Google Drive every time.
 
 ## Schema changes
 
@@ -108,7 +104,7 @@ from v1, so old code that touches them keeps working.
    then `import_folder_data(folder_path)`.
 4. Call `run_server()`. Click the "Open search" link.
 
-### Locally (no Drive needed)
+### Locally 
 1. `pip install flask pandas pillow piexif ipython`
 2. Open the notebook in Jupyter.
 3. Run sections 1–4 to define everything.
@@ -116,7 +112,7 @@ from v1, so old code that touches them keeps working.
    then `run_server()`.
 5. Open the URL it prints.
 
-## What to try next (recommended next steps)
+## Recommended next steps
 
 These are the obvious next iterations, in rough order of payoff:
 
@@ -140,12 +136,3 @@ These are the obvious next iterations, in rough order of payoff:
    everything. Even basic HTTP auth in front of Flask would be a
    reasonable step before the lab uses this on real data.
 
-## Project timeline check-in
-
-Per the timeline in the proposal:
-
-- **4/26–5/2: implementation and debugging** — this update lands here.
-- **5/3–5/8: finishing touches, demo by 5/7** — recommend prioritizing
-  (1) video GPS and (2) spatial filter from the list above for the
-  demo, since both are visible wins. (3)–(5) can be flagged as future
-  work in the demo slides.
