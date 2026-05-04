@@ -44,7 +44,7 @@ type (professional or personal), and by a substring of the flight's
 name. Results are color-coded by type and show how many photos and
 videos each flight has, with a link to a detail page. The detail page
 renders the flight's path on a Leaflet map and lays out every photo
-and video in the folder as a thumbnail gallery — clicking a thumbnail
+and video in the folder as a thumbnail gallery, clicking a thumbnail
 opens the full file, and videos play inline. There's also a combined
 map view that draws every flight matching your current filter as a
 polyline, so you can see at a glance where the lab has been flying
@@ -185,7 +185,7 @@ data, so they're safe to run blind.
 Section 7 connects to the lab's actual Drive in five steps. The first
 cell mounts Drive (you'll get the standard Colab OAuth prompt). The
 second cell points at the shortcut and prints a preview of what it
-found — number of months, number of flight folders per month, sample
+found: number of months, number of flight folders per month, sample
 folder names. This is a quick sanity check before the longer import.
 The third cell runs the full ingestion, which can take a few minutes
 the first time because EXIF is read from every JPG over the Drive
