@@ -28,7 +28,7 @@ south meadow" has no way to query that without manually opening folder
 after folder.
 
 Our job was to build a system that ingests this messy, heterogeneous
-data and surfaces it through a single clean interface — something a
+data and surfaces it through a single clean interface like something a
 researcher can open in their browser, narrow down by date, click on a
 flight, and see exactly what was captured.
 
