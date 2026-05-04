@@ -10,7 +10,7 @@
 ## The problem we set out to solve
 
 The Spatial Analysis Laboratory at CEEDS runs drone flights for a wide
-range of research purposes — capturing imagery and video that
+range of research purposes, capturing imagery and video that
 researchers later analyze for everything from land-use studies to
 ecological monitoring. The lab has been steadily accumulating flight
 data over multiple semesters and field seasons, and the result is a
@@ -59,7 +59,7 @@ reads GPS EXIF tags from each JPG, sorts the photos by their capture
 timestamps, and uses that ordered sequence as the flight path. The
 result is that a folder full of geotagged photos shows up on the map
 exactly the way a folder with a proper flight log does. This was the
-single highest-leverage feature we added — without it, a real chunk of
+single highest-leverage feature we added: without it, a real chunk of
 the lab's existing data would have been invisible.
 
 ## How it works
@@ -247,7 +247,7 @@ MP4 files carry GPS in their metadata stream separately from the SRT
 sidecar, and `pymediainfo` or `ffprobe` can pull it out. This would
 handle the case where someone deletes the SRT but keeps the video.
 
-A close second is **spatial filtering** — letting the user draw a box
+A close second is **spatial filtering**, letting the user draw a box
 on the map and retrieve all flights whose paths intersect it.
 SQLite's R*Tree extension makes this straightforward: build an R-tree
 index on the (min_lat, max_lat, min_lon, max_lon) bounding box of
@@ -276,19 +276,17 @@ the lab's needs evolve.
 
 This project builds on work from a previous CSC230 student team —
 particularly the date-range search and the map view, which we
-extended significantly but didn't have to design from scratch. The
-iterative, multi-semester nature of the project was one of the things
-we appreciated most about it.
+extended significantly but didn't have to design from scratch. 
 
 Huge thanks to **Kala'i Ellis** at the Spatial Analysis Laboratory
 for being a generous and hands-on stakeholder, walking us through
-the data multiple times and clarifying scope whenever we asked.
+the data and clarifying scope whenever we asked.
 
-Thank you to our CSC230 instructor and TAs for the structure and
+Thank you to our CSC230 instructor Halie Rando for the structure and
 feedback that got us to this point.
 
 ---
 
-**Team:** *[add your names here]*
+**Team:** Nargiz Akhmetova, Jazmine Jordan, Jennifer Tapia Martinez, Angelica Brito Diaz, Yu Xuan Chen
 
-**Stakeholder:** Kala'i Ellis · Spatial Analysis Laboratory · CEEDS · Smith College
+**Stakeholder:** Kala'i Ellis · Spatial Analysis Laboratory · CEEDS 
