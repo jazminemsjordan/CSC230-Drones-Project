@@ -3,7 +3,7 @@
 > A web-based tool for cataloging, mapping, and browsing drone flight
 > data for the Spatial Analysis Laboratory at CEEDS.
 
-**CSC230 Final Project · Smith College · Spring 2025**
+**CSC230 Final Project · Spring 2026**
 
 ---
 
